@@ -9,7 +9,6 @@
     <body>
         <div id="root"></div>
         <script type="text/babel">
-        //TODO Card flip animation
             class GameController extends React.Component {
                 constructor(props) {
                     super(props)
@@ -48,7 +47,7 @@
                     }
                     return (
                         <div style={style}>
-                            <p style={styleP}> Movimientos: {this.state.moves} </p>
+                            <p style={styleP}> Movimientos-: {this.state.moves} </p>
                             <Memory options={list} OnEarnedPoint={this.handlePoints.bind(this)} onMove={this.handleMoves.bind(this)}/>
                         </div>
                     )
